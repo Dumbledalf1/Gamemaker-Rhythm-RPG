@@ -1,6 +1,6 @@
 /// #description Start Dialogue
 previous_room = roomOverworld;
-var chartName = "Aloha.json"
+var chartName = "Tutorial.json"
 with (instance_create_depth(x, y, -1, objBattleHandler)) {
 	var buffer = buffer_load(chartName);
 	var jsonString = buffer_read(buffer, buffer_text);
@@ -10,9 +10,9 @@ with (instance_create_depth(x, y, -1, objBattleHandler)) {
 
 image_speed = 0;
 with (instance_create_depth(x + 50, y, 1, objDialogue)) {
-	lines = ["Welcome Challenger!",
-		"Who am I you may be wondering? Well my friends call me Gary, but I prefer The Braniac!",
-		"Now prepare for a surprise attack!"]
+	lines = ["Welcome to the tutorial!",
+		"Press A, S, and D when notes reach the bridges.",
+		"Great players keep the beat steady. Ready to practice?"]
 	active = true;
 	onFinish = function() { 
 		objBattleHandler.started = true;
@@ -23,7 +23,7 @@ with (instance_create_depth(x + 50, y, 1, objDialogue)) {
 }
 songFinish = function() {
 	with (instance_create_depth(x + 50, y, 1, objDialogue)) {
-		lines = ["Well played bozo! I thought that would surely put you to sleep! Next time I won't give you a warning!"]
+		lines = ["Nice work! You finished the tutorial level."]
 		active = true;
 		onFinish = function() { room_goto(objBraniac.previous_room) };
 		target = objBraniac;

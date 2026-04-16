@@ -47,6 +47,7 @@
   "IncludedFiles":[
     {"$GMIncludedFile":"","%Name":"Aloha.json","CopyToMask":-1,"filePath":"datafiles","name":"Aloha.json","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"BrainBattle.json","CopyToMask":-1,"filePath":"datafiles","name":"BrainBattle.json","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
+    {"$GMIncludedFile":"","%Name":"Tutorial.json","CopyToMask":-1,"filePath":"datafiles","name":"Tutorial.json","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
   ],
   "isEcma":false,
   "LibraryEmitters":[],
